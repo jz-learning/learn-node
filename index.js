@@ -1,6 +1,6 @@
-const { application } = require('express');
+import express from 'express';
 
-const app = require('express')();
+const app = express();
 const PORT = 8080;
 
 // Start our API, listen on port
@@ -15,7 +15,7 @@ app.get('/tshirt', (req, res) => {
   // OK Request
   res.status(200).send({
     tshirt : '👕',
-    size   : 'large'
+    size   : 'Smol'
   });
 });
 
